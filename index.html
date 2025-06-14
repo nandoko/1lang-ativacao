@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Conta ativada!</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; margin-top: 10vh; }
+    .success { color: #34C759; font-size: 2em; }
+    .open-app { margin-top: 2em; font-size: 1.2em; }
+    button { padding: 1em 2em; font-size: 1em; border-radius: 8px; background: #34C759; color: #fff; border: none; }
+  </style>
+</head>
+<body>
+  <div class="success">✅ Conta ativada com sucesso!</div>
+  <p>Agora você pode fazer login normalmente no app.</p>
+  <div class="open-app">
+    <button onclick="window.location.href='1langapp://ativado'">Abrir o app</button>
+  </div>
+  <script>
+    // Tenta abrir o app automaticamente após 1 segundo
+    setTimeout(() => {
+      window.location.href = '1langapp://ativado';
+    }, 1000);
+  </script>
+</body>
+</html>
